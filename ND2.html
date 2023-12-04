@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleND.css">
+  <title>Šviesoforo Valdymas</title>
+</head>
+<body>
+
+<div class="traffic-light">
+  <div class="light red-light" onclick="changeLight('red')"></div>
+  <div class="light yellow-light" onclick="changeLight('yellow')" id="yellow-light"></div>
+  <div class="light green-light" onclick="changeLight('green')"></div>
+</div>
+
+<div class="controls-container">
+  <div class="controls">
+    <button onclick="changeLight('red')">Raudona</button>
+    <button onclick="changeLight('yellow')">Geltona</button>
+    <button onclick="changeLight('green')">Žalia</button>
+    <button onclick="blinkYellow()">Mirksi geltona</button>
+    <button onclick="turnOnAllLights()">Visos</button>
+    <button onclick="turnOffAllLights()">Išjungti visas</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
